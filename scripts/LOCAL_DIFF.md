@@ -27,3 +27,10 @@
 ## 2026-11-14 (fleet audit) — author email must be a PII-safe placeholder
 - SkillEvaluator's PII validator flags real-looking emails ([PII-HIGH] Non-placeholder email address).
 - Author email convention: `agent@example.com` everywhere (compiler output, harness docs, augment script).
+
+## 2026-11-14 (upstream sync v2.5.0..main, 7 commits) — LOCAL_DIFF re-applied
+- Synced 30 files from upstream main (also_read dual-contract fix #32, lazy PyYAML #31,
+  DeepSeek Harness bundle, toolbook validation refresh, methodology/docs refresh).
+- LOCAL_DIFF frontmatter patch re-applied to compile_single.py + compile_pack.py
+  (upstream overwrote them; hunks don't conflict). Verified: 26/26 tests pass,
+  test compile emits SKILL_SPEC frontmatter, Tier 1 runs clean.
