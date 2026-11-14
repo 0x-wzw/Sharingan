@@ -41,7 +41,7 @@ cd ~/.hermes/profiles/cangjie/skills-src/mediacrawler
 
 ## Stage 2 — Distill (cangjie-skill)
 
-Follow the full `SKILL.md` in `skills-src/cangjie-skill/SKILL.md`. Condensed runbook:
+Follow the full `SKILL.md` in `Projects/sharingan/SKILL.md`. Condensed runbook:
 
 1. **Input gate**: confirm with user — text source path (from Stage 1 `data/` or any book/transcript file), title/author/date metadata, purpose (single vs pack). Never distill from memory; no text → stop and ask.
 1a. **Source-integrity gate (ALWAYS before Stage 0)**: locate and read the ACTUAL artifact (video transcript, repo text, paper) — never the promotional framing of a tweet/link. Verify the artifact's real topic matches the claimed framing; a mismatch is an integrity finding that must lead the DIGEST and the skill's boundary section, and the skill must refuse to teach what the artifact doesn't contain. X posts are read anonymously via `https://api.fxtwitter.com/<user>/status/<id>` (JSON: author/text/media/article URL); X articles are login-walled — if the claimed substance lives only in an article or raw captions are unavailable, distill only from what is extractable, flag every claim with its extraction layer (e.g. `notes-layer`), and route unverifiable specifics to needs_review rather than cards. User-facing deliverables (summaries, DIGEST, chat reports) are written in English unless the user asks otherwise.

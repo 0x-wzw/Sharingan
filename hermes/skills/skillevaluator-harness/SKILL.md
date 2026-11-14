@@ -84,7 +84,7 @@ Agent mode: `npx skills add NVIDIA/SkillEvaluator` then ask "is my skill any goo
 ## Learned-in-operation pitfalls (2026-11-14, first run on llms-from-scratch)
 
 - **~~Compiled SKILL.md lacks `metadata.author`~~ FIXED at source** — compiler patched
-  (see `skills-src/cangjie-skill/scripts/LOCAL_DIFF.md`) to emit `version`, `license`,
+  (see `Projects/sharingan/scripts/LOCAL_DIFF.md`) to emit `version`, `license`,
   `metadata.author` (`Name <email@host>` form) natively from bundle `book.author`.
   `augment_frontmatter.py` kept only as fallback for pre-patch compiles.
 - **BUILD_MANIFEST.json content hashes trip gitleaks `generic-api-key`** — expected on
@@ -142,7 +142,7 @@ External validation layer of the cangjie skill stack. NVIDIA SkillEvaluator adds
 
 ## Troubleshooting
 
-- **Compiled SKILL.md lacks `metadata.author`** → FIXED at source: the compiler now emits `version`, `license`, `metadata.author` natively from bundle `book.author`; `augment_frontmatter.py` remains as fallback for pre-patch compiles (see `skills-src/cangjie-skill/scripts/LOCAL_DIFF.md`).
+- **Compiled SKILL.md lacks `metadata.author`** → FIXED at source: the compiler now emits `version`, `license`, `metadata.author` natively from bundle `book.author`; `augment_frontmatter.py` remains as fallback for pre-patch compiles (see `Projects/sharingan/scripts/LOCAL_DIFF.md`).
 - **gitleaks flags `generic-api-key` on BUILD_MANIFEST.json** → expected on every compiled bundle (SHA-256 digests of capability files); verify the line is a hex digest and record ACCEPTED-FP with line-level evidence — `.gitleaksignore` cannot suppress it.
 - **Security Scan INCOMPLETE** → skillspector is environment-gated; record SKIPPED-ENV. INCOMPLETE ≠ FAIL.
 - **LLM-backed checks unavailable / Tier 2-3 refused** → set `SKILL_EVAL_LLM_PROVIDER` + provider key; keyless runs cover only the 10 static validators.

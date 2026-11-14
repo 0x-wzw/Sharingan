@@ -73,7 +73,7 @@ regenerates the `.txt` from all captured items.
 ## Stage 2 — Distill
 
 Feed `workspace/sources/<name>/<name>.txt` into the cangjie-skill RIA-TV++
-pipeline exactly as documented in `skills-src/cangjie-skill/SKILL.md`
+pipeline exactly as documented in `Projects/sharingan/SKILL.md`
 (Adler → 5 extractors → triple verify → promotion gate → RIA++ cards →
 Zettelkasten → pressure tests → compile). Compiled skill lands in `skills/`.
 
@@ -110,7 +110,7 @@ Stage-1 collector for YouTube — the one platform MediaCrawler does not cover. 
 2. Run `youtube_crawler.py <target> --name <slug>` (accepts watch/youtu.be/shorts URLs, bare 11-char IDs, playlist URLs; multiple IDs in one call).
 3. Let the acquisition chain do its work: youtube_transcript_api captions → yt-dlp `--write-auto-subs` fallback → optional `--with-audio` for ASR when no captions exist.
 4. Check `workspace/sources/<name>/manifest.json` for per-video `status`/`method`; the combined `<name>.txt` is the direct distill input. Re-runs with the same `--name` are idempotent/resumable.
-5. Feed `<name>.txt` into the cangjie-skill RIA-TV++ pipeline (Stage 2 distill, per `skills-src/cangjie-skill/SKILL.md`).
+5. Feed `<name>.txt` into the cangjie-skill RIA-TV++ pipeline (Stage 2 distill, per `Projects/sharingan/SKILL.md`).
    Full command reference: `## Usage`; output layout: `## Output layout (distill-ready)`.
 
 ## Examples
