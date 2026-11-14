@@ -55,7 +55,7 @@ Sharingan mirrors process and infrastructure, not vault-canonical outputs.
 
 ## v2.2.1 doctrine swap — Tetherline supersedes poteto-swarm-method
 
-`poteto-swarm-method` removed from the mirror: its content was merged into
+`tetherline-doctrine` removed from the mirror: its content was merged into
 [Tetherline](https://github.com/0x-wzw/tetherline) (the doctrine of bounded autonomy —
 poteto-core, estate-hardened) with full attribution. The six Tetherline skills
 (tetherline-doctrine, tetherline-protocol, trust-ladder, verification-skill-builder,

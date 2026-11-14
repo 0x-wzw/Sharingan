@@ -11,7 +11,7 @@ source: "X post 2118759929947328571 (@Kiiiiira777, 2026-11-06): Dario Amodei cli
 metadata:
   hermes:
     tags: [agents, harness, onboarding, ladder, starter-stack, cangjie]
-    related_skills: [poteto-swarm-method, cangjie, multi-agent-patterns]
+    related_skills: [tetherline-doctrine, cangjie, multi-agent-patterns]
 ---
 
 # Harness Starter Stack — from zero to running the AI
@@ -60,7 +60,7 @@ Using AI won't be enough — "AI won't replace you. Someone with a harness will.
 
 1. Pick the rung matching today's work; install ONE repo from it — do not stack all 14.
 2. Rung 1→2 in days, rung 3 in weeks, rung 4 only after outputs are verifiable.
-3. A harness without verification is a slop factory — pair any loop with checks before it runs unattended (see `poteto-swarm-method` for the trust ladder once one loop works).
+3. A harness without verification is a slop factory — pair any loop with checks before it runs unattended (see `tetherline-doctrine` for the trust ladder once one loop works).
 
 ## Anti-patterns
 

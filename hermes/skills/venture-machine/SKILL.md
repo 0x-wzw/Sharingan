@@ -10,7 +10,7 @@ source: "session-built 2026-11-09 — venture machine operation (kanban funnel, 
 metadata:
   hermes:
     tags: [ventures, kanban, funnel, automation, cron, entrepreneurship]
-    related_skills: [parallel-venture-validation, poteto-swarm-method, venture-machine]
+    related_skills: [parallel-venture-validation, tetherline-doctrine, venture-machine]
 ---
 
 # Venture Machine — operating the validation funnel
@@ -73,5 +73,5 @@ metadata:
 ## Related
 
 - `parallel-venture-validation` — the method being automated
-- `poteto-swarm-method` — trust-ladder + swarm-ceiling rules
+- `tetherline-doctrine` — the doctrine of bounded autonomy (supersedes poteto-swarm-method, which it merged with attribution)
 - Vault: `Knowledge/20-Reports/2026-11-09-venture-process-funnel.md` (full process + ledger)

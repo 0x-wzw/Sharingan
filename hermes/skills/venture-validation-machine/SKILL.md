@@ -1,7 +1,7 @@
 ---
 name: venture-validation-machine
 approval_source: agent
-description: Use when running the end-to-end venture machine — ideation to parallel validation to unattended building to triage to graduation. Combines parallel-venture-validation (method), venture-machine (funnel ops), poteto-swarm-method (swarm engineering).
+description: Use when running the end-to-end venture machine — ideation to parallel validation to unattended building to triage to graduation. Combines parallel-venture-validation (method), venture-machine (funnel ops), tetherline-doctrine (swarm engineering — supersedes poteto-swarm-method).
 version: 1.0.0
 author: Hermes Agent
 license: MIT
@@ -10,7 +10,7 @@ source: "composed 2026-11-09 from parallel-venture-validation v1.1.0 + venture-m
 metadata:
   hermes:
     tags: [ventures, validation, swarm, kanban, funnel, automation, entrepreneurship]
-    related_skills: [parallel-venture-validation, venture-machine, poteto-swarm-method, harness-starter-stack]
+    related_skills: [parallel-venture-validation, venture-machine, tetherline-doctrine, harness-starter-stack]
 ---
 
 # Venture Validation & Building Machine — composed operating system
@@ -23,7 +23,7 @@ Umbrella skill fusing three layers. Load the sub-skill for depth; this one defin
 |---|---|---|
 | Method | `parallel-venture-validation` (Cheek/MIT Sloan) | WHY + the validation pipeline: fan-out 130 ideas → human shortlists ≈6 → one bounded agent per venture (24-step plan, 10 tactics, $0) → parallel unattended runs → commit on evidence only |
 | Funnel ops | `venture-machine` | WHERE + the standing implementation: `ventures` board, venture-builder profile constitution, daily 05:20 driver, ideation pool, plans/, triage scorecard /25, weekly report cron `fd49f5bc0f1b`, Sahati experiment stack |
-| Swarm engineering | `poteto-swarm-method` (Lauren Tan) | HOW to scale it: autonomy bounded by verifiability, trust ladder, verification skills, verification-model-as-judge, gardening, deterministic work in tools |
+| Swarm engineering | `tetherline-doctrine` (Lauren Tan) | HOW to scale it: autonomy bounded by verifiability, trust ladder, verification skills, verification-model-as-judge, gardening, deterministic work in tools |
 
 ## The composed pipeline (one graph)
 
@@ -60,7 +60,7 @@ Umbrella skill fusing three layers. Load the sub-skill for depth; this one defin
 
 - Designing/repairing the funnel, driver, or builder constitution → `venture-machine`
 - Questioning the validation method itself (batch size, gates, evidence standard) → `parallel-venture-validation`
-- Scaling beyond ~6 concurrent, adding verifier agents, or automerge decisions → `poteto-swarm-method`
+- Scaling beyond ~6 concurrent, adding verifier agents, or automerge decisions → `tetherline-doctrine`
 - Full process + ledger history: vault `Knowledge/20-Reports/2026-11-09-venture-process-funnel.md`
 
 ## Anti-patterns (any one = reject the plan)

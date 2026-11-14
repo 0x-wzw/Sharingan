@@ -11,7 +11,7 @@ source: "X post 2119367655278723559 (@alvinfoo, 2026-11-08) — Paul Cheek (MIT 
 metadata:
   hermes:
     tags: [entrepreneurship, validation, parallel-agents, ventures, mit-sloan, cangjie]
-    related_skills: [harness-starter-stack, poteto-swarm-method, grounded-citations]
+    related_skills: [harness-starter-stack, tetherline-doctrine, grounded-citations]
 ---
 
 # Parallel Venture Validation — test many, keep the winners

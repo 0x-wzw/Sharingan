@@ -10,7 +10,7 @@ source: "garrytan/g-harness-evals repo @ edacaa8 + tweet 2121463161069228382, di
 metadata:
   hermes:
     tags: [evals, harness, benchmarking, agents, cost, methodology]
-    related_skills: [harness-starter-stack, poteto-swarm-method, venture-machine]
+    related_skills: [harness-starter-stack, tetherline-doctrine, venture-machine]
 ---
 
 # Harness-eval method — compare agent harnesses honestly
