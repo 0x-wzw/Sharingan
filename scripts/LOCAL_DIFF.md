@@ -23,3 +23,7 @@
   CHANGELOG, NOTICE.
 - Added `scripts/vault_mirror.py` — reference pointer to the VM mirror-sync
   (`0x-wzw/hermes-harness` scripts/cangjie_skill_sync.py; cron 04:10 on the VM).
+
+## 2026-11-14 (fleet audit) — author email must be a PII-safe placeholder
+- SkillEvaluator's PII validator flags real-looking emails ([PII-HIGH] Non-placeholder email address).
+- Author email convention: `agent@example.com` everywhere (compiler output, harness docs, augment script).
