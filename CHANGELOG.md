@@ -1,5 +1,14 @@
 # Changelog — Sharingan
 
+## v2.1.1 — 2026-11-14
+- **Removed** distilled bundles (llms-from-scratch, karpathy-llm-usage) and the FDE
+  funnel (10 stage cards + router + aidev26) from the mirror: their workflow is the
+  same pipeline Sharingan ships, but their canonical outcomes live in the Obsidian
+  Vault — Sharingan mirrors process and infrastructure, not vault-canonical outputs
+- INDEX.md mirror policy section added; 26 → 14 mirrored skills
+
+---
+
 ## v2.1.0 — 2026-11-14
 - **Removed** 5 design/branding mirror skills (brutalist-ui, high-end-visual-design,
   minimalist-ui, taste, output) — external-repo artifacts, not part of Sharingan's
