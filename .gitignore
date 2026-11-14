@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist_build/
+
+# Compiled output (per-run artifacts, not source)
+books/
+runs/
+reports/
+*.report.json
+
+# Local state
+PIPELINE_STATE.md*
+.cangjie/
+.DS_Store
