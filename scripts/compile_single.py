@@ -121,7 +121,7 @@ def build_entry_md(bundle: dict, variant: str) -> str:
         f"version: {book.get('version', '1.0.0')}",
         "license: MIT",
         "metadata:",
-        f"  author: Cangjie Distillation <hermes@teoh.my>  # source: {book.get('author', 'unspecified')}",
+        f"  author: Cangjie Distillation <agent@example.com>  # source: {book.get('author', 'unspecified')}",
         f"  cangjie.generated-by: {TOOL_VERSION}",
         f"  cangjie.variant: {variant}",
         f"  cangjie.bundle-id: {bundle['bundle_id']}",

@@ -3,6 +3,6 @@
 
 ## 2026-11-14 — compile frontmatter: SKILL_SPEC compliance for NVIDIA SkillEvaluator Tier 1
 - compile_single.py build_entry_md fm_lines: emit `version`, `license: MIT`, `metadata.author`
-  ("Cangjie Distillation <hermes@teoh.my>" + `# source:` comment from bundle book.author).
+  ("Cangjie Distillation <agent@example.com>" + `# source:` comment from bundle book.author).
 - compile_pack.py capability card fm_lines: same three fields.
 - Reason: SkillEvaluator SCHEMA-HIGH errors without metadata.author; QUALITY-MEDIUM without version.

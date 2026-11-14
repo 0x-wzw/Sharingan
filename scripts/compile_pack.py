@@ -44,7 +44,7 @@ def build_promoted_skill_md(cap: dict, bundle: dict, card_text: str) -> str:
         f"version: {bundle['book'].get('version', '1.0.0')}",
         "license: MIT",
         "metadata:",
-        f"  author: Cangjie Distillation <hermes@teoh.my>  # source: {bundle['book'].get('author', 'unspecified')}",
+        f"  author: Cangjie Distillation <agent@example.com>  # source: {bundle['book'].get('author', 'unspecified')}",
         f"  cangjie.generated-by: {TOOL_VERSION}",
         f"  cangjie.capability-id: {cap['capability_id']}",
         f"  cangjie.capability-revision: {cap['revision']}",
