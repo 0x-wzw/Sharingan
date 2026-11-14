@@ -75,6 +75,7 @@ Requirements: Python 3.10+, PyYAML, jsonschema, tiktoken. Run `python3 scripts/c
 
 ```
 ├── docs/RUNBOOK.md     # the RIA-TV++ runbook (Sharingan is a harness, not a skill)
+├── docs/STACK.md       # layer map: doctrine → harness → application → operator → craft
 ├── methodology/        # per-stage methodology prompts (Stage 0 → 5)
 ├── extractors/         # 5 extractor prompts for Stage 1
 ├── templates/          # BOOK_OVERVIEW / DIGEST / SKILL / test-prompts templates
