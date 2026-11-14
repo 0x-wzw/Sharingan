@@ -6,10 +6,10 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Release: v1.0.0](https://img.shields.io/badge/Release-v1.0.0-8b5cf6.svg)](./CHANGELOG.md)
-[![Method: RIA--TV++](https://img.shields.io/badge/Method-RIA--TV++-2ea44f.svg)](./SKILL.md)
+[![Method: RIA--TV++](https://img.shields.io/badge/Method-RIA--TV++-2ea44f.svg)](./docs/RUNBOOK.md)
 [![External Validation: NVIDIA SkillEvaluator](https://img.shields.io/badge/Tier--1--gated-NVIDIA%20SkillEvaluator-76b900.svg)](./harness/SKILL.md)
 
-**Finish reading, watching, or listening — and leave with a methodology you can invoke, plus an independent quality score.**
+**A harness, not a skill: point it at a book, lecture, or podcast — it runs the RIA-TV++ pipeline and emits skills you can invoke, each gated by an independent quality score. The outputs live in your skill directories / vault; the harness lives here.**
 
 </div>
 
@@ -58,9 +58,9 @@ Every stage writes a checkpoint (`PIPELINE_STATE.md`) — interrupted runs resum
 ## Install
 
 ```bash
-# The toolchain is prompt-driven: give SKILL.md to any skill-aware agent
+# The harness is runbook-driven: point a skill-aware agent at docs/RUNBOOK.md
 # (Claude Code, Codex, OpenClaw, Hermes Agent), then:
-#   "Distill <book/transcript/repo> into skills"
+#   "Run the Sharingan pipeline on <book/transcript/repo>"
 
 # External validation (optional but recommended):
 pip install skillevaluator          # NVIDIA SkillEvaluator v0.9+
@@ -74,7 +74,7 @@ Requirements: Python 3.10+, PyYAML, jsonschema, tiktoken. Run `python3 scripts/c
 ## Repository map
 
 ```
-├── SKILL.md            # the meta-skill: full RIA-TV++ runbook
+├── docs/RUNBOOK.md     # the RIA-TV++ runbook (Sharingan is a harness, not a skill)
 ├── methodology/        # per-stage methodology prompts (Stage 0 → 5)
 ├── extractors/         # 5 extractor prompts for Stage 1
 ├── templates/          # BOOK_OVERVIEW / DIGEST / SKILL / test-prompts templates
