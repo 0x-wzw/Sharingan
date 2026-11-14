@@ -1,11 +1,12 @@
 ---
 name: cangjie
 approval_source: agent
-description: Use when distilling content into executable Agent Skills.
-version: 1.0.0
+description: Use when distilling short-form content into agent skills.
+version: 1.1.0
 author: Hermes Agent
 license: MIT
 read_scope: profile
+source: "session-built 2026-10-08; v1.1.0 2026-11-14 — aligned with Sharingan v2.0.0 routing (short-form path)"
 metadata:
   hermes:
     tags: [cangjie, skills, distillation, github, sync]
@@ -14,14 +15,22 @@ metadata:
 
 # Cangjie — distill high-value content into executable Agent Skills
 
-Cangjie (仓颉) turns books, talks, interviews, and profiles into executable
-skills: research the source, extract the METHOD, publish it as a skill the
-agent can load and follow. Named after the mythical inventor of Chinese
-characters — turn what was said into what can be run.
+**Scope (v1.1.0): this is the SHORT-FORM path.** Tweets/X threads, short clips, repos,
+papers, operator briefs → one Hermes-format skill, fast. Long-form sources (books,
+courses, long transcripts, podcasts) route to the **Sharingan** RIA-TV++ pipeline
+(`github.com/0x-wzw/Sharingan`, the full distillation system this stack merged into at
+v2.0.0 — see its `hermes/` pack for the 14-skill mirror and `hermes/INDEX.md` for
+provenance).
+
+Cangjie (仓颉) turns short-form sources — tweets, clips, repos, papers, briefs — into
+executable skills: research the source, extract the METHOD, publish it as a skill the
+agent can load and follow. Named after the mythical inventor of Chinese characters —
+turn what was said into what can be run. (Books and long-form content: use Sharingan.)
 
 ## When to Use
 
-- The user asks to "turn it into a skill" after research, a talk, an interview, a book, or a person profile
+- The user asks to "turn it into a skill" after short-form research, a clip, a tweet, a
+  repo, or an operator brief (long-form → Sharingan, see Routing above)
 - The user invokes the cangjie profile (`cangjie` CLI = `hermes -p cangjie`)
 - Publishing or syncing distilled skills to the `0x-wzw/cangjie-skill` GitHub repo
 
