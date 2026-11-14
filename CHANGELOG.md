@@ -1,5 +1,18 @@
 # Changelog — Sharingan
 
+## v2.1.0 — 2026-11-14
+- **Removed** 5 design/branding mirror skills (brutalist-ui, high-end-visual-design,
+  minimalist-ui, taste, output) — external-repo artifacts, not part of Sharingan's
+  methodology-distillation focus
+- **Added** 17 Tier-1-hardened skills from the local cangjie profile fleet audit:
+  the two-book LLM bundle (llms-from-scratch, 23 capabilities), karpathy-llm-usage,
+  skillevaluator-harness, media crawlers (mediacrawler-cangjie, youtube-crawler,
+  wechat-video-ingest), the FDE funnel (10 skills + router), aidev26-agent-engineering,
+  and the venture-validation-machine umbrella
+- INDEX.md updated: 26 mirrored skills with per-skill provenance and audit status
+
+---
+
 ## v2.0.0 — 2026-11-14
 Merge of the Ubuntu VM cangjie stack (0x-wzw lineage) into the Sharingan pipeline:
 - `hermes/`: 14 distilled skills (provenance in `hermes/INDEX.md`) + `cangjie-lightweight`
