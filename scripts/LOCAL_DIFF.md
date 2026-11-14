@@ -6,3 +6,20 @@
   ("Cangjie Distillation <agent@example.com>" + `# source:` comment from bundle book.author).
 - compile_pack.py capability card fm_lines: same three fields.
 - Reason: SkillEvaluator SCHEMA-HIGH errors without metadata.author; QUALITY-MEDIUM without version.
+# Local vendor diffs — re-apply before syncing cangjie-skill upstream
+(lesson: "the engine regresses upstream" — venture-machine)
+
+## 2026-11-14 — compile frontmatter: SKILL_SPEC compliance for NVIDIA SkillEvaluator Tier 1
+- compile_single.py build_entry_md fm_lines: emit `version`, `license: MIT`, `metadata.author`
+  ("Cangjie Distillation <agent@example.com>" + `# source:` comment from bundle book.author).
+- compile_pack.py capability card fm_lines: same three fields.
+- Reason: SkillEvaluator SCHEMA-HIGH errors without metadata.author; QUALITY-MEDIUM without version.
+
+## 2026-11-14 — v2.0.0 merge: Ubuntu cangjie stack (0x-wzw lineage)
+
+- Added `hermes/` — 14 distilled skills + `cangjie-lightweight/SKILL.md` + `INDEX.md`
+  (mirror of the Ubuntu VM vault pack; vault stays canonical). Additive except:
+  SKILL.md routing section (marker: `Routing: long-form vs short-form (v2.0.0)`),
+  CHANGELOG, NOTICE.
+- Added `scripts/vault_mirror.py` — reference pointer to the VM mirror-sync
+  (`0x-wzw/hermes-harness` scripts/cangjie_skill_sync.py; cron 04:10 on the VM).

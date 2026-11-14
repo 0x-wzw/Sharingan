@@ -1,5 +1,13 @@
 # Changelog — Sharingan
 
+## v2.0.0 — 2026-11-14
+Merge of the Ubuntu VM cangjie stack (0x-wzw lineage) into the Sharingan pipeline:
+- `hermes/`: 14 distilled skills (provenance in `hermes/INDEX.md`) + `cangjie-lightweight`
+  short-form path; routing rule added to SKILL.md (long-form -> RIA-TV++, short-form -> lightweight)
+- `scripts/vault_mirror.py`: vault-mirror + bundle-release sync reference
+- NOTICE: second lineage attribution (0x-wzw/cangjie-skill policy build, 2026-11-07 code+releases-only policy)
+
+
 ## v1.0.0 — 2026-11-14
 First public release. Fork of cangjie-skill v2.5.0 (MIT) with an integrated
 external-validation harness.

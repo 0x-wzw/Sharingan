@@ -37,6 +37,17 @@ metadata:
 
 **v2.5 关键变化（ADR-002）**: 阶段 2–4 不再直接把每个单元写成独立的最终 Skill 目录，而是产出一份 **Capability Bundle**（`books/<slug>/.cangjie/capabilities/verified.yaml` + `cards/*.md`）。single 与 pack 都从这同一份 Bundle 由 `scripts/cangjie.py compile` 确定性编译，两者引用同一组稳定 `capability_id`。旧的 one-to-one 输出仍受支持（legacy-pack，见 `docs/migrations/2026-08-25-v2.0-to-v2.1.md`）。
 
+
+## Routing: long-form vs short-form (v2.0.0)
+
+- **Long-form** (book, course, long transcript, podcast) -> the full RIA-TV++ pipeline (this document).
+- **Short-form** (tweet/X thread, short clip, repo, paper) -> the **lightweight path** at
+  `hermes/cangjie-lightweight/SKILL.md`: fetch source, extract the method, author a
+  Hermes-format skill (<=60-char trigger-first description), install, mirror to vault +
+  bundle releases. Same output contract, a fraction of the ceremony.
+- The merged Ubuntu-VM pack (14 distilled skills + the lightweight path) lives in
+  `hermes/` — see `hermes/INDEX.md` for provenance.
+
 ## 何时调用此 skill
 
 用户说类似:

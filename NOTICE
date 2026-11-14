@@ -15,3 +15,23 @@ Sharingan — third-party attribution
 3. Local operational additions (0x-wzw, 2026, MIT):
    harness/ (SkillEvaluator integration + pitfalls), scripts/LOCAL_DIFF.md,
    compiler frontmatter patches (compile_single.py, compile_pack.py).
+Sharingan — third-party attribution
+====================================
+
+1. cangjie-skill v2.5.0 (upstream of this fork)
+   https://github.com/kangarooking/cangjie-skill — MIT License
+   Provides: RIA-TV++ methodology, extractor prompts, methodology docs,
+   deterministic toolchain (scripts/), schemas, templates.
+   Divergence record: scripts/LOCAL_DIFF.md (SKILL_SPEC frontmatter emission).
+
+2. NVIDIA SkillEvaluator v0.9.0
+   https://github.com/NVIDIA/SkillEvaluator — Apache-2.0 License
+   NOT bundled; installed separately (pip install skillevaluator).
+   Referenced by: harness/SKILL.md (external validation gate).
+
+3. Local operational additions (0x-wzw, 2026, MIT):
+   harness/ (SkillEvaluator integration + pitfalls), scripts/LOCAL_DIFF.md,
+   compiler frontmatter patches (compile_single.py, compile_pack.py).
+
+Additional lineage (v2.0.0): the `hermes/` pack and lightweight path originate from the
+0x-wzw/cangjie-skill policy build (Ubuntu VM, 2026-11-07 code+releases-only policy).
