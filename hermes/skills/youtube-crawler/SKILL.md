@@ -5,9 +5,10 @@ name: youtube-crawler
 description: |
   Collect YouTube video/playlist transcripts into the cangjie workspace for distillation into agent skills. Uses youtube_transcript_api (captions) with yt-dlp auto-subs fallback and optional audio download for ASR. No browser/Playwright needed — works on macOS 12. Use when the user provides YouTube links, asks to "crawl youtube", "抓取YouTube字幕", "distill this video/playlist into a skill", or wants a YouTube channel/playlist turned into distilled skills. Triggers: "crawl youtube", "youtube transcript", "distill youtube video", "拆YouTube视频", "youtube playlist to skill".
 metadata:
+  layer: harness
+  stack-source: repo:0x-wzw/Sharingan
   tags: [youtube-crawler]
   author: "Cangjie Distillation <agent@example.com>"
-
 ---
 
 # YouTube → cangjie-skill: transcript → distill pipeline

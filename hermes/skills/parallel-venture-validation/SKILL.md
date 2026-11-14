@@ -9,6 +9,8 @@ platforms: [linux, macos, windows]
 read_scope: profile
 source: "X post 2119367655278723559 (@alvinfoo, 2026-11-08) — Paul Cheek (MIT Sloan) clip, transcript extracted from video + MIT Sloan writeups"
 metadata:
+  layer: application
+  stack-source: vault
   hermes:
     tags: [entrepreneurship, validation, parallel-agents, ventures, mit-sloan, cangjie]
     related_skills: [harness-starter-stack, tetherline-doctrine, grounded-citations]

@@ -8,6 +8,8 @@ license: MIT
 read_scope: profile
 source: "session-built 2026-11-09 — venture machine operation (kanban funnel, driver, bots, triage, Sahati experiment)"
 metadata:
+  layer: application
+  stack-source: vault
   hermes:
     tags: [ventures, kanban, funnel, automation, cron, entrepreneurship]
     related_skills: [parallel-venture-validation, tetherline-doctrine, venture-machine]

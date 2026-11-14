@@ -8,6 +8,8 @@ license: MIT
 read_scope: profile
 source: "composed 2026-11-09 from parallel-venture-validation v1.1.0 + venture-machine v1.0.0 + poteto-swarm-method v1.0.0"
 metadata:
+  layer: harness
+  stack-source: vault
   hermes:
     tags: [ventures, validation, swarm, kanban, funnel, automation, entrepreneurship]
     related_skills: [parallel-venture-validation, venture-machine, tetherline-doctrine, harness-starter-stack]

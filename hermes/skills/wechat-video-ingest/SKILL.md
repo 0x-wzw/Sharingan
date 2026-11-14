@@ -6,6 +6,8 @@ author: Hermes Agent
 license: MIT
 platforms: [macos, linux]
 metadata:
+  layer: harness
+  stack-source: repo:0x-wzw/Sharingan
   tags: [wechat-video-ingest]
   author: "Cangjie Distillation <agent@example.com>"
   hermes:

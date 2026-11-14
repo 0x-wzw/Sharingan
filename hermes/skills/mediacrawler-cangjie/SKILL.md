@@ -3,8 +3,9 @@ name: mediacrawler-cangjie
 description: |
   Fetch public content from media platforms (Xiaohongshu, Douyin, Bilibili, Kuaishou, Weibo, Tieba, Zhihu) via MediaCrawler, then distill it into executable agent skills via cangjie-skill. Use when the user wants to crawl/collect posts, comments, or creator content from Chinese social media platforms, or when they want to turn crawled content (or any book/video/podcast transcript) into distilled, callable methodology skills. Triggers: "爬取/采集 小红书/抖音/B站/微博/知乎", "crawl xiaohongshu/douyin/bilibili", "distill this content into skills", "拆书/蒸馏成skill", "collect posts about X then turn it into a skill".
 metadata:
+  layer: harness
+  stack-source: repo:0x-wzw/Sharingan
   author: "Cangjie Distillation <agent@example.com>"
-
 ---
 
 # MediaCrawler + cangjie-skill: crawl → distill pipeline

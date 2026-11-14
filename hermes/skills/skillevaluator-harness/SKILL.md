@@ -7,6 +7,8 @@ license: MIT
 read_scope: profile
 source: "composed 2026-11-14 from NVIDIA/SkillEvaluator v0.9.0 (Apache-2.0) — integrated into the cangjie-skill RIA-TV++ pipeline as the external Stage-4/5 validator"
 metadata:
+  layer: harness
+  stack-source: repo:0x-wzw/Sharingan
   tags: [skillevaluator-harness]
   author: "Cangjie Distillation <agent@example.com>"
   hermes:
