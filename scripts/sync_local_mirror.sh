@@ -3,7 +3,7 @@
 # Policy (hermes/INDEX.md): mirror process/infrastructure skills; outputs stay canonical in the vault.
 set -euo pipefail
 REPO="$HOME/Projects/sharingan"
-PROFILE_SKILLS="$HOME/.hermes/profiles/cangjie/skills"
+PROFILE_SKILLS="$HOME/.hermes/profiles/kakashi/skills"
 DEFAULT_SKILLS="$HOME/.hermes/skills"
 # skills mirrored into the repo (process/infrastructure/operators — NOT vault-canonical outputs)
 MIRROR_SKILLS=(mediacrawler-cangjie youtube-crawler wechat-video-ingest skillevaluator-harness venture-validation-machine)
@@ -36,7 +36,7 @@ done
 
 echo "[3/4] compiler <-> profile linkage"
 # profile toolchain is a symlink to this repo — always synced; verify:
-diff -q scripts/compile_single.py "$HOME/.hermes/profiles/cangjie/skills-src/cangjie-skill/scripts/compile_single.py" >/dev/null \
+diff -q scripts/compile_single.py "$HOME/.hermes/profiles/kakashi/skills-src/cangjie-skill/scripts/compile_single.py" >/dev/null \
   && echo "  compiler symlink: OK" || echo "  WARN: profile toolchain diverged from repo"
 
 echo "[4/4] push"

@@ -31,7 +31,7 @@ pipeline already consumes (same layout as `sources/conversations-andrew-ng/`).
 ```bash
 # Single video (URL or 11-char ID)
 ~/.hermes/hermes-agent/venv/bin/python \
-  ~/.hermes/profiles/cangjie/skills/youtube-crawler/youtube_crawler.py \
+  ~/.hermes/profiles/kakashi/skills/youtube-crawler/youtube_crawler.py \
   https://www.youtube.com/watch?v=aircAruvnKk --name nn-chapter-1
 
 # Multiple videos
@@ -82,7 +82,7 @@ Zettelkasten → pressure tests → compile). Compiled skill lands in `skills/`.
 
 - `youtube_transcript_api` v1.2.4 lives in `~/.hermes/hermes-agent/venv` (invoke via
   that venv's python — the system python cannot import it).
-- `yt-dlp` 2026.08.19 lives in `~/.hermes/profiles/cangjie/venv/bin/`.
+- `yt-dlp` 2026.08.19 lives in `~/.hermes/profiles/kakashi/venv/bin/`.
 - **No Playwright/browser needed** — deliberately avoids the macOS 12 chromium gap.
 - Heavy yt-dlp use can trip YouTube bot checks; keep playlists modest and delays on.
 - If both caption paths fail (music video, no subs, hard block), the item is marked
@@ -101,7 +101,7 @@ Stage-1 collector for YouTube — the one platform MediaCrawler does not cover. 
 ## Prerequisites
 
 - `youtube_transcript_api` v1.2.4 in `~/.hermes/hermes-agent/venv` (invoke via that venv's python — the system python cannot import it)
-- `yt-dlp` 2026.08.19 in `~/.hermes/profiles/cangjie/venv/bin/` (auto-subs fallback, playlist expansion)
+- `yt-dlp` 2026.08.19 in `~/.hermes/profiles/kakashi/venv/bin/` (auto-subs fallback, playlist expansion)
 - No browser/Playwright needed — deliberately avoids the macOS 12 chromium gap
 - `--with-audio` items need a later ASR step (ilmu-asr-v4.2 on the ilmu endpoint)
 

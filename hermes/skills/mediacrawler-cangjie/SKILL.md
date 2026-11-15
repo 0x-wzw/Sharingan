@@ -21,9 +21,9 @@ Two-stage pipeline. Stage 1 collects public content with MediaCrawler (browser-a
 ## Stage 1 — Collect (MediaCrawler)
 
 ```bash
-cd ~/.hermes/profiles/cangjie/skills-src/mediacrawler
+cd ~/.hermes/profiles/kakashi/skills-src/mediacrawler
 # first run: scan QR code to persist login state (headless=False)
-~/​.hermes/profiles/cangjie/venv/bin/python main.py --platform xhs --lt qrcode --type search \
+~/​.hermes/profiles/kakashi/venv/bin/python main.py --platform xhs --lt qrcode --type search \
   --keywords " semiconductor investment " --start "2026-01-01" --end "2026-10-01"
 ```
 
@@ -36,7 +36,7 @@ cd ~/.hermes/profiles/cangjie/skills-src/mediacrawler
 
 ### Environment
 
-- Python venv: `~/.hermes/profiles/cangjie/venv` (has pyyaml, jsonschema, tiktoken, playwright pip pkg)
+- Python venv: `~/.hermes/profiles/kakashi/venv` (has pyyaml, jsonschema, tiktoken, playwright pip pkg)
 - **Playwright browser caveat**: Playwright does not ship a chromium build for macOS 12 on this machine. If browser launch fails, fall back to: (a) an existing Chrome/Chromium via `channel="chrome"` in MediaCrawler's browser config, or (b) export data another way and skip Stage 1. Do not waste cycles trying to install unsupported browser builds.
 - First login needs an interactive desktop session for QR scan — do it in Terminal.app on the Mac, not headless.
 
@@ -56,8 +56,8 @@ Follow the full `SKILL.md` in `Projects/sharingan/SKILL.md`. Condensed runbook:
    - Stage 3: Zettelkasten links + glossary
    - Stage 4: pressure tests (actually run representative tasks)
    - Stage 5: compile → `python3 scripts/cangjie.py compile --bundle books/<slug>/.cangjie/capabilities --out <dir> --output auto`
-4. **Toolchain**: run via `~/.hermes/profiles/cangjie/venv/bin/python scripts/cangjie.py …` (venv has the required deps; doctor passes). Work in `~/.hermes/profiles/cangjie/workspace/` so outputs persist.
-5. **Deliver**: copy/symlink compiled skills into `~/.hermes/profiles/cangjie/skills/` (or target profile), report install location.
+4. **Toolchain**: run via `~/.hermes/profiles/kakashi/venv/bin/python scripts/cangjie.py …` (venv has the required deps; doctor passes). Work in `~/.hermes/profiles/kakashi/workspace/` so outputs persist.
+5. **Deliver**: copy/symlink compiled skills into `~/.hermes/profiles/kakashi/skills/` (or target profile), report install location.
 6. **External validation (SkillEvaluator harness)** — after compile, run Tier 1 `skillevaluator quality-check <compiled-dir> -r json` on the output; score <70 blocks install. Tier 2/3 (eval datasets / live Skill Lift) for high-stakes skills only. See `skills/skillevaluator-harness/SKILL.md`.
 
 ## Quality red lines (from cangjie-skill, non-negotiable)

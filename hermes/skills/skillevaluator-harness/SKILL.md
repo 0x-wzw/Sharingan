@@ -38,7 +38,7 @@ Rule: **internal Stage-4 pass ≠ external validation**. A skill ships as "inter
 only SkillEvaluator results may upgrade it to "externally validated". Never claim Tier 3
 Lift without an actual no-skill baseline run.
 
-## Commands (venv: `~/.hermes/profiles/cangjie/venv/bin/`)
+## Commands (venv: `~/.hermes/profiles/kakashi/venv/bin/`)
 
 ```bash
 # Tier 1 — deterministic, no API key (always run this first)
@@ -112,7 +112,7 @@ External validation layer of the cangjie skill stack. NVIDIA SkillEvaluator adds
 
 ## Prerequisites
 
-- `skillevaluator` installed in `~/.hermes/profiles/cangjie/venv/bin/` (`pip install skillevaluator`, PyPI package)
+- `skillevaluator` installed in `~/.hermes/profiles/kakashi/venv/bin/` (`pip install skillevaluator`, PyPI package)
 - Tier 1 `quality-check` is deterministic and needs no API key — always run this first
 - Tier 2/3 need an LLM provider key (`SKILL_EVAL_LLM_PROVIDER` + `NVIDIA_API_KEY` or OpenAI/anthropic); keyless runs cover the 10 static validators only
 - Tier 3 Skill Lift requires Docker + sandbox (Harbor/NeMo Gym); on this Mac record `SKIPPED-ENV` instead
