@@ -8,6 +8,7 @@ license: MIT
 read_scope: profile
 source: "composed 2026-11-09 from parallel-venture-validation v1.1.0 + venture-machine v1.0.0 + poteto-swarm-method v1.0.0"
 metadata:
+  author: "Zehan Teoh <zehan@example.com>"
   layer: application
   stack-source: vault
   hermes:

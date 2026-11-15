@@ -8,6 +8,7 @@ license: MIT
 read_scope: profile
 source: "session-built 2026-11-09 — venture machine operation (kanban funnel, driver, bots, triage, Sahati experiment)"
 metadata:
+  author: "Zehan Teoh <zehan@example.com>"
   layer: application
   stack-source: vault
   hermes:

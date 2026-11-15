@@ -1,6 +1,6 @@
 ---
 name: wechat-video-ingest
-description: "Acquire public WeChat Channels (视频号) posts and turn them into text + image OCR captures: weixin.qq.com/sph/<id> → Firecrawl JS-render scrape → extract cover image URL from the markdown payload → curl the image → ilmu vision OCR with structure-preserving transcription. Use when the user shares a weixin.qq.com/sph link or asks to capture/distill a WeChat Channels video. Triggers: 'wechat video', '视频号', 'sph link', 'capture this weixin post', 'ingest wechat channels'."
+description: "Acquire public WeChat Channels (视频号) posts and turn them into text + image OCR captures: weixin.qq.com/sph/(id) → Firecrawl JS-render scrape → extract cover image URL from the markdown payload → curl the image → ilmu vision OCR with structure-preserving transcription. Use when the user shares a weixin.qq.com/sph link or asks to capture/distill a WeChat Channels video. Triggers: 'wechat video', '视频号', 'sph link', 'capture this weixin post', 'ingest wechat channels'."
 version: 1.1.0
 author: Hermes Agent
 license: MIT
@@ -8,6 +8,8 @@ platforms: [macos, linux]
 metadata:
   layer: harness
   stack-source: repo:0x-wzw/Sharingan
+  tags: [wechat-video-ingest]
+  author: "Cangjie Distillation <agent@example.com>"
   hermes:
     tags: [wechat, ingestion, ocr, firecrawl, ilmu, cangjie, media]
     related_skills: [mediacrawler-cangjie, pixelshot-page-capture]
@@ -132,6 +134,32 @@ payload = {
 - Cover images are 540×720 JPEG; dense infographics may need per-region crops for full OCR fidelity
 - Engagement stats are captured as displayed (four numbers, meaning unlabeled — record verbatim, don't guess which is which)
 - rag-health gate: if `~/.hermes/logs/hermes-rag-health.json` shows `fail`, skip the handoff-embedding step per vault protocol
+
+## Purpose
+
+Stage-1 of the cangjie crawl→distill pipeline for WeChat sources. Acquires a public WeChat Channels (视频号) post via Firecrawl JS-render scraping and produces two artifacts: the post's text content (caption, metadata, engagement stats) and a structure-preserving OCR transcription of its cover/infographic image.
+
+## Instructions
+
+1. Scrape the post with Firecrawl JS-render (`waitFor: 10000` — verified minimum; the page is a pure JS shell) and check `success:true` in the JSON.
+2. Extract the markdown payload: cover image URL first, then **read the caption before OCR** — if the caption is complete, the caption IS the primary content; classify per the payload-type table (infographic / teaser / full-caption). Never assume which type until you've scraped.
+3. Download the cover image immediately with curl — the stodownload URL is time-limited; `file` it to confirm JPEG 540x720.
+4. Run ilmu vision OCR (base64 data URI, temperature 0.1, structure-preserving prompt with explicit absence-flagging).
+5. File the capture (vault `Knowledge/00-Raw/` with Schema v2 frontmatter, or cangjie bundle + cover JPG) with author credit and an explicit "video body NOT transcribed" open-item note. Verify which payload type you got before writing any insights.
+   Full commands and code: `## Procedure`.
+
+## Examples
+
+1. `ACWomNhi1O` (2026-10-08, v1 FDE source) — infographic post: full on-image text recovered via OCR of the cover.
+2. `A2yLcXCaOA` (2026-10-17, 数产白话 ladder) — teaser card: caption truncated; only title/hashtags + cover obtainable, treat as teaser.
+3. `ANGeAkU5fY` (2026-10-17, 老江 training path) — full-caption post: content was in the caption, not the image; the cover OCR lacked it but the caption carried it.
+
+## Troubleshooting
+
+- **Firecrawl returns `Unauthorized: Token missing`** → env not sourced; re-run `set -a; source ~/.hermes/.env; set +a`.
+- **Firecrawl HTTP 401** → the API key was rotated; update `FIRECRAWL_API_KEY` in `~/.hermes/.env`.
+- **Cover OCR lacks the expected content** → doesn't mean the content doesn't exist — check whether the caption carried it (the ANGeAkU5fY case), and classify the payload type before concluding.
+- **Dense infographic OCR incomplete** → cover images are only 540×720 JPEG; use per-region crops of the image for full OCR fidelity.
 
 ## Related
 

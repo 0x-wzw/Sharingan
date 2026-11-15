@@ -9,6 +9,7 @@ platforms: [linux, macos, windows]
 read_scope: profile
 source: "X post 2119367655278723559 (@alvinfoo, 2026-11-08) — Paul Cheek (MIT Sloan) clip, transcript extracted from video + MIT Sloan writeups"
 metadata:
+  author: "Zehan Teoh <zehan@example.com>"
   layer: application
   stack-source: vault
   hermes:
