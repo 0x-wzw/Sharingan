@@ -10,7 +10,7 @@ where a layer's content lives.
 | Layer | Count | Skills | Governing law |
 |---|---|---|---|
 | **doctrine** | 6 | tetherline-doctrine, tetherline-protocol, trust-ladder, verification-skill-builder, swarm-org-design, sample-and-garden | Canonical: repo `0x-wzw/tetherline`. No swarm/autonomy decision without these. |
-| **harness** | 7 | mediacrawler-cangjie, skillevaluator-harness, youtube-crawler, wechat-video-ingest, venture-validation-machine, mermaid-fleet-map, (+ Sharingan itself) | Canonical: repo `0x-wzw/Sharingan`. Deterministic toolchains; Tier-1 gated. |
+| **harness** | 8 | mediacrawler-cangjie, skillevaluator-harness, rea-harness, youtube-crawler, wechat-video-ingest, venture-validation-machine, mermaid-fleet-map, (+ Sharingan itself) | Canonical: repo `0x-wzw/Sharingan`. Deterministic toolchains; Tier-1 gated. |
 | **application** | 6 | venture-machine, parallel-venture-validation, intelligence-weekly-synthesis, self-evolution, handoff-authoring, handoff_backup | Run UNDER doctrine: any agent fan-out needs a trust-tier + verification suite first. |
 | **operator** | 12 | obsidian-vault, vault-search, hermes-rag-ops, find-skills, prompt-optimizer, kanban-swarm, note-taking, research/internet-research, skepsis, strategy-architect, … | Single-owner runbooks; human gates stay human. |
 | **craft** | 100 | design/dev/media/lark/cloudflare suites + fde funnel + distilled bundles | Domain outputs; where vault-canonical (llms-from-scratch, karpathy-llm-usage, fde-*), `stack-source: vault`. |
@@ -37,10 +37,11 @@ YAML-valid as of 2026-11-14.
 
 ```
 0x-wzw/tetherline ──(tetherline-sync cron)──> ~/.hermes/skills/{6 doctrine skills}
-0x-wzw/Sharingan  <─(sharingan-sync cron)──> ~/.hermes/{profiles}/skills (policy skills)
+0x-wzw/Sharingan  <─(sharingan-sync cron)──> ~/.hermes/{profiles}/skills (policy skills, incl. harness/rea)
 kangarooking/cangjie-skill ──(audited LOCAL_DIFF sync)──> Sharingan toolchain
 Obsidian Vault ──(canonical outputs)──> profile skills (never mirrored into repos)
 ```
 
-Upstream state as of v2.2.2: Sharingan = upstream v2.5.0..main fully consumed;
+Upstream state as of v2.3.0: Sharingan = upstream v2.5.0..main fully consumed;
+REA integrated as Stage-1/Stage-4 evidence provider (`harness/rea/SKILL.md`);
 Tetherline upstream watch tracks MiroFish / Paperclip / GBrain / Kimi-K3 / ruflo.

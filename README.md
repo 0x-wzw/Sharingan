@@ -28,6 +28,7 @@ Sharingan is a **content-to-skill pipeline**: feed it a book, a lecture transcri
 | Addition | What it does |
 |---|---|
 | **External validation gate** (`harness/`) | NVIDIA [SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) Tier 1 runs on every compiled skill before install; SCHEMA/SECRET errors block unless dispositioned with evidence |
+| **Artifact evidence** (`harness/rea/`) | [REA](https://github.com/morluto/rea) supplies source/binary-level evidence for Stage-1 claims and Stage-4 grounding; never a substitute for triple verification or the Tier-1 score |
 | **SKILL_SPEC-compliant frontmatter** | Compiler emits `version`, `license`, and `metadata.author` (`Name <email@host>`) natively — passes independent static quality checks by construction |
 | **Audited compiler diffs** | Every vendor patch is recorded in `scripts/LOCAL_DIFF.md` so upstream re-syncs never silently regress |
 | **Operational pitfalls library** | Verified-false-positive handling (gitleaks vs content hashes), environment-blocked scanners (`SKIPPED-ENV` ≠ FAIL), YAML block-scalar rules — learned from real distillation runs |

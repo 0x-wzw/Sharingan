@@ -1,6 +1,26 @@
 # Changelog
 
-版本口径：`cangjie.version`（根 `SKILL.md` metadata）是唯一权威版本号。
+## [2.3.0] - 2026-11-19
+
+### Added
+
+- **REA harness** (`harness/rea/SKILL.md`): artifact-level evidence provider for the
+  RIA-TV++ pipeline. Uses [morluto/rea](https://github.com/morluto/rea) v6.9.0
+  (MIT, npm `rea-agents`) at Stage 1 (new source type: app/bundle/binary), Stage 1.5
+  V1 (source-sufficiency evidence), and Stage 4 (grounding of implementation claims).
+- Scope rule: REA is evidence, not validation. It never replaces triple verification
+  and never produces a SkillEvaluator score. Engine gaps are `SKIPPED-ENV`, never passes.
+- Upstream prerequisites and pitfalls documented: Node 22.x >=22.23.4 / 24.x >=24.22.1
+  / 26.12.1+, dry-run before `rea setup`, npx-cache durability, 255 MCP tools.
+
+### Changed
+
+- `docs/STACK.md`: harness layer 7 → 8, sync topology notes the new skill.
+- `README.md`: harness additions table now lists artifact evidence alongside the
+  external validation gate.
+- `sharingan.version` set to 2.3.0; `cangjie.version` remains 2.5.0 upstream.
+
+版本口径：`cangjie.version`（根 `SKILL.md` metadata）是上游流水线权威版本号；`sharingan.version` 是本 fork 的发布版本号。
 schema 各自带 `schema_version` 独立演进；宿主锁定的盲测与阈值定标是另行记录的运行时证据，
 不与仓库发布版本号混为一谈。
 
