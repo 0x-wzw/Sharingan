@@ -34,6 +34,7 @@ Sharingan is a **content-to-skill pipeline**: feed it a book, a lecture transcri
 | **Audited compiler diffs** | Every vendor patch is recorded in `scripts/LOCAL_DIFF.md` so upstream re-syncs never silently regress |
 | **Operational pitfalls library** | Verified-false-positive handling (gitleaks vs content hashes), environment-blocked scanners (`SKIPPED-ENV` ≠ FAIL), YAML block-scalar rules — learned from real distillation runs |
 | **Layer discipline** (`docs/STACK.md`) | doctrine → harness → application → operator → craft, with one canonical source per layer and a Tier-1 gate before distribution |
+| **Tier-1 distilled bundles** | RIA-TV++ outputs compiled from external papers, gated by SkillEvaluator before entering the craft layer — first bundle: WeMM-Video (8 entries) |
 
 ## The pipeline (RIA-TV++ v2.5)
 

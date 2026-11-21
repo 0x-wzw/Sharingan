@@ -62,3 +62,25 @@ poteto-core, estate-hardened) with full attribution. The six Tetherline skills
 swarm-org-design, sample-and-garden) are the deployable doctrine and are synced from
 the tetherline repo, not mirrored here (same policy as vault-canonical outputs:
 Tetherline's repo is canonical for doctrine).
+
+## v2.4.0 — WeMM-Video Tier-1 distilled bundle (craft layer)
+
+Distilled from [arXiv:2611.26409](https://arxiv.org/abs/2611.26409) and
+[Tencent/WeMM-Video](https://github.com/Tencent/WeMM-Video) via RIA-TV++ v2.5.
+All entries carry `metadata.layer: craft`, `stack-source: repo:0x-wzw/Sharingan`,
+and passed the NVIDIA SkillEvaluator Tier-1 gate (8/8 PASS).
+
+| Skill | Version | Role |
+|---|---|---|
+| wemm-video-router/SKILL.md | 1.0.0 | source router for 4 retained router cards |
+| progressive-modality-curriculum/SKILL.md | 1.0.0 | freeze-what-works curriculum for new modalities |
+| timestamped-token-interleaving/SKILL.md | 1.0.0 | explicit time axis before fusing temporal streams |
+| failure-mode-ordered-post-training/SKILL.md | 1.0.0 | stage order by diagnosed failure mode |
+| teacher-allocation-by-capability/SKILL.md | 1.0.0 | teacher choice for retention vs improvement |
+| anti-repetition-loop/SKILL.md | 1.0.0 | offline hard negatives + LoRA-only rounds |
+| reward-routing-by-verifiability/SKILL.md | 1.0.0 | rule/rubric/teacher reward routing |
+| dimension-based-evaluation/SKILL.md | 1.0.0 | dimensions, metric conventions, provenance |
+
+Full evidence trail (overview, candidates, verified units, RIA cards, DIGEST,
+blind trigger tests, output tasks) lives in the gitignored working directory
+`books/wemm-video/` and is installed locally; only the compiled skills are mirrored here.

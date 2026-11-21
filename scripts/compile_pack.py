@@ -23,6 +23,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -49,7 +50,7 @@ def build_promoted_skill_md(cap: dict, bundle: dict, card_text: str) -> str:
         f"  cangjie.capability-id: {cap['capability_id']}",
         f"  cangjie.capability-revision: {cap['revision']}",
         f"  cangjie.bundle-id: {bundle['bundle_id']}",
-        f"  cangjie.source-title: {bundle['book']['title']}",
+        f"  cangjie.source-title: {json.dumps(bundle['book']['title'], ensure_ascii=False)}",
     ]
     if tags:
         lines.append(f"  cangjie.tags: {', '.join(tags)}")

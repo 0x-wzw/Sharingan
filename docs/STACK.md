@@ -13,10 +13,10 @@ where a layer's content lives.
 | **harness** | 8 | mediacrawler-cangjie, skillevaluator-harness, rea-harness, youtube-crawler, wechat-video-ingest, venture-validation-machine, mermaid-fleet-map, (+ Sharingan itself) | Canonical: repo `0x-wzw/Sharingan`. Deterministic toolchains; Tier-1 gated. |
 | **application** | 6 | venture-machine, parallel-venture-validation, intelligence-weekly-synthesis, self-evolution, handoff-authoring, handoff_backup | Run UNDER doctrine: any agent fan-out needs a trust-tier + verification suite first. |
 | **operator** | 12 | obsidian-vault, vault-search, hermes-rag-ops, find-skills, prompt-optimizer, kanban-swarm, note-taking, research/internet-research, skepsis, strategy-architect, … | Single-owner runbooks; human gates stay human. |
-| **craft** | 100 | design/dev/media/lark/cloudflare suites + fde funnel + distilled bundles | Domain outputs; where vault-canonical (llms-from-scratch, karpathy-llm-usage, fde-*), `stack-source: vault`. |
+| **craft** | 108 | design/dev/media/lark/cloudflare suites + fde funnel + distilled bundles + WeMM-Video Tier-1 pack (8) | Domain outputs; where vault-canonical (llms-from-scratch, karpathy-llm-usage, fde-*), `stack-source: vault`; the WeMM-Video pack is `repo:0x-wzw/Sharingan`. |
 
-Distribution is over both local profiles (default + cangjie), 187 SKILL.md files, all
-YAML-valid as of 2026-11-14.
+Distribution is over both local profiles (default + cangjie), 195 SKILL.md files, all
+YAML-valid as of 2026-11-21 (8 WeMM-Video entries added in v2.4.0).
 
 ## Cross-layer rules
 
@@ -42,6 +42,7 @@ kangarooking/cangjie-skill ──(audited LOCAL_DIFF sync)──> Sharingan tool
 Obsidian Vault ──(canonical outputs)──> profile skills (never mirrored into repos)
 ```
 
-Upstream state as of v2.3.0: Sharingan = upstream v2.5.0..main fully consumed;
+Upstream state as of v2.4.0: Sharingan = upstream v2.5.0..main fully consumed;
 REA integrated as Stage-1/Stage-4 evidence provider (`harness/rea/SKILL.md`);
+WeMM-Video distilled bundle added to the craft layer (8 entries, Tier-1 PASS 8/8);
 Tetherline upstream watch tracks MiroFish / Paperclip / GBrain / Kimi-K3 / ruflo.

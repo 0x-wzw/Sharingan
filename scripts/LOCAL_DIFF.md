@@ -34,3 +34,10 @@
 - LOCAL_DIFF frontmatter patch re-applied to compile_single.py + compile_pack.py
   (upstream overwrote them; hunks don't conflict). Verified: 26/26 tests pass,
   test compile emits SKILL_SPEC frontmatter, Tier 1 runs clean.
+
+## 2026-11-21 — YAML safety for book titles containing a colon
+- `scripts/compile_pack.py`: emit `cangjie.source-title` via `json.dumps(..., ensure_ascii=False)`
+  (quoted YAML scalar). Unquoted titles with `: ` (e.g. "WeMM-Video: Pushing the Frontiers…")
+  made compiled promoted SKILL.md frontmatter unparseable and tripped the staging hard-gate.
+- Local vendor patch; re-apply after any upstream compiler sync.
+

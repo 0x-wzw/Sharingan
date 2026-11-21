@@ -1,5 +1,39 @@
 # Changelog
 
+## [2.4.0] - 2026-11-21
+
+### Added
+
+- **WeMM-Video Tier-1 distilled bundle** (`hermes/skills/`): 8 discoverable entries —
+  1 source router (`wemm-video-router`) plus 7 promoted skills distilled from
+  [arXiv:2611.26409](https://arxiv.org/abs/2611.26409) and the Tencent/WeMM-Video
+  repo. All 11 verified capabilities (including 4 router cards) are in the local
+  bundle `books/wemm-video/` (gitignored working dir).
+- Full evidence trail: Stage 0 overview, 5 extractor files (96 candidates),
+  triple verification, coverage audit, RIA++ cards, Zettelkasten `also_read` links,
+  DIGEST, blind trigger tests, and real-output tasks.
+
+### Changed
+
+- `docs/STACK.md`: craft layer 100 → 108; WeMM-Video pack tagged
+  `stack-source: repo:0x-wzw/Sharingan`.
+- `hermes/INDEX.md`: new v2.4.0 distilled bundle section.
+- `sharingan.version` set to 2.4.0; `cangjie.version` remains 2.5.0 upstream.
+
+### Fixed
+
+- `scripts/compile_pack.py`: quote `cangjie.source-title` via `json.dumps` so source
+  titles containing `: ` no longer break compiled SKILL.md frontmatter (recorded in
+  `scripts/LOCAL_DIFF.md`).
+
+### Verification
+
+- Bundle schema valid (11 capabilities); `validate_skill_pack.py`: 0 errors, 0 warnings.
+- NVIDIA SkillEvaluator Tier 1: 8/8 PASS, 0 failed (publication eligibility Incomplete
+  = skillspector unavailable, recorded as environment-blocked).
+- Blind trigger tests: 41/42 (97.6%); one ambiguous prompt replaced and retained as
+  a dual-accept regression. Real output tasks: 14/14 PASS.
+
 ## [2.3.0] - 2026-11-19
 
 ### Added
