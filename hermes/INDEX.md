@@ -84,3 +84,14 @@ and passed the NVIDIA SkillEvaluator Tier-1 gate (8/8 PASS).
 Full evidence trail (overview, candidates, verified units, RIA cards, DIGEST,
 blind trigger tests, output tasks) lives in the gitignored working directory
 `books/wemm-video/` and is installed locally; only the compiled skills are mirrored here.
+
+## v2.4.1 — Firecrawl pack
+
+| admin-internal-listener-exposure/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |
+| before-production-hardening-gates/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |
+| dev-vs-selfhost-env-isolation/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |
+| engine-forcing-precedence/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |
+| firecrawl-source-router/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |
+| llm-extraction-model-selection/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |
+| prompt-injection-capability-triage/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |
+| verification-done-criteria/SKILL.md | 1.0.0 | firecrawl/firecrawl @ 41b36df, RIA-TV++ Stage 1.5 distilled 2026-11-21 |

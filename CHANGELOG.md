@@ -54,6 +54,34 @@
   external validation gate.
 - `sharingan.version` set to 2.3.0; `cangjie.version` remains 2.5.0 upstream.
 
+## [2.4.1] - 2026-11-21
+
+### Added
+
+- **Firecrawl pack** (`hermes/skills/`): 8 source-grounded skills distilled from
+  `firecrawl/firecrawl` @ `41b36df` — a source router plus 7 promoted capabilities:
+  `dev-vs-selfhost-env-isolation`, `admin-internal-listener-exposure`,
+  `before-production-hardening-gates`, `llm-extraction-model-selection`,
+  `prompt-injection-capability-triage`, `engine-forcing-precedence`,
+  `verification-done-criteria`.
+- Stage 0 + Stage 1.5 evidence trail under `books/firecrawl/` (report, overview,
+  coverage audit, quote recheck, source manifest). Explicit gaps T1 (first-scrape
+  tutorial) and T6 (full agent/MCP onboarding) stay external and are NOT claimed.
+
+### Fixed
+
+- All 11 Stage-1.5 quote defects repaired before compile: 8 non-verbatim quotes
+  restored from source, 3 over-length quotes shortened; 3 wrong file paths
+  corrected. Independent recheck: 0 mismatch / 0 overlength / 0 invalid paths.
+- `skill_eval.py` wrapper now honours reviewed, unexpired exception rows
+  (`skill|validator|reason|reviewer|expires`) for documented false positives.
+
+### Verification
+
+- Capability bundle schema valid (7 capabilities); compiler hard-gate clean.
+- Tier-1 gate on all 8 compiled skills: 8/8 PASS (86.5–89.0, grade B); 6 clean,
+  2 via reviewed Security Scan exception for verbatim third-party documentation.
+
 版本口径：`cangjie.version`（根 `SKILL.md` metadata）是上游流水线权威版本号；`sharingan.version` 是本 fork 的发布版本号。
 schema 各自带 `schema_version` 独立演进；宿主锁定的盲测与阈值定标是另行记录的运行时证据，
 不与仓库发布版本号混为一谈。

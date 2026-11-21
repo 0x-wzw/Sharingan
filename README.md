@@ -5,7 +5,7 @@
 ### Distill methodologies from books, lectures, podcasts, repos, and shipped artifacts into externally-validated, callable AI agent skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Release: v2.3.0](https://img.shields.io/badge/Release-v2.3.0-8b5cf6.svg)](./CHANGELOG.md)
+[![Release: v2.4.1](https://img.shields.io/badge/Release-v2.4.1-8b5cf6.svg)](./CHANGELOG.md)
 [![Method: RIA--TV++](https://img.shields.io/badge/Method-RIA--TV++-2ea44f.svg)](./docs/RUNBOOK.md)
 [![External Validation: NVIDIA SkillEvaluator](https://img.shields.io/badge/Tier--1--gated-NVIDIA%20SkillEvaluator-76b900.svg)](./harness/SKILL.md)
 [![Artifact Evidence: REA](https://img.shields.io/badge/Evidence-REA%20v6.9.0-76b900.svg)](./harness/rea/SKILL.md)
