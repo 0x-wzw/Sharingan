@@ -3,7 +3,7 @@
 Source: https://github.com/Tencent/WeMM-Video (13 commits, 2026-11-19/20), paper
 arXiv:2611.26409 (21 pp, submitted 2026-11-19), README/README_zh, docs/serving.md,
 patch/README.md, native/README.md, examples/README.md. Local mirror:
-`/Users/admin/.hermes/cache/scratch/wemm-video-eval/`. License: Apache-2.0 code;
+`$HOME/.hermes/cache/scratch/wemm-video-eval/`. License: Apache-2.0 code;
 separate model license. Attribution: WeChat Vision, Tencent Inc. + Tsinghua.
 
 ## Structure (Adler step 1)

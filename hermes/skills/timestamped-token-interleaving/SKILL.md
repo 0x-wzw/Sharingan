@@ -53,3 +53,32 @@ Not for non-temporal fusion (text+image) and not a substitute for a real audio e
 ## Related capabilities (Stage 3 draft)
 
 See also_read in verified.yaml.
+
+# Timestamped Token Interleaving
+
+## Purpose
+
+"For video inputs with accompanying audio, visual and audio tokens are interleaved in chronological order, supplemented with explicit textual timestamps to facilitate fine-grained cross-modal temporal
+
+## Instructions
+
+1. Read the capability description and confirm the trigger matches the current task.
+2. Follow the method in this skill in order; do not skip its verification steps.
+3. Record the evidence and the outcome; mark anything unverifiable explicitly.
+4. If the method's prerequisites are missing, stop and report the gap rather than improvising.
+
+## Examples
+
+```
+Task: <a task matching this skill's trigger>
+Action: apply the steps above in order
+Result: <verified outcome or explicit gap>
+```
+
+## Troubleshooting
+
+| Error | Cause | Solution |
+|---|---|---|
+| Trigger does not fit the task | Over-broad routing | Check the "not for" boundary in the description |
+| Prerequisites missing | Environment not prepared | Stop and document the missing input or dependency |
+| Output cannot be verified | Evidence not captured | Re-run the method's verification step before reporting |

@@ -77,3 +77,32 @@ source: Sharingan RIA-TV++ distillation of WeMM-Video (arXiv:2611.26409), 2026-1
 - Source does not disclose a required parameter - mark needs-review and do not invent it
 - Only benchmark deltas available - report as source-reported, not causal
 - Validation rows marked pending must stay pending
+
+# Wemm Video Router
+
+## Purpose
+
+1. Align new modalities before unfreezing the backbone
+
+## Instructions
+
+1. Read the capability description and confirm the trigger matches the current task.
+2. Follow the method in this skill in order; do not skip its verification steps.
+3. Record the evidence and the outcome; mark anything unverifiable explicitly.
+4. If the method's prerequisites are missing, stop and report the gap rather than improvising.
+
+## Examples
+
+```
+Task: <a task matching this skill's trigger>
+Action: apply the steps above in order
+Result: <verified outcome or explicit gap>
+```
+
+## Troubleshooting
+
+| Error | Cause | Solution |
+|---|---|---|
+| Trigger does not fit the task | Over-broad routing | Check the "not for" boundary in the description |
+| Prerequisites missing | Environment not prepared | Stop and document the missing input or dependency |
+| Output cannot be verified | Evidence not captured | Re-run the method's verification step before reporting |
